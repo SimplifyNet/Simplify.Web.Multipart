@@ -5,7 +5,7 @@ Simplify.Web.Multipart
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v0.1-blue.png)](https://www.nuget.org/packages/Simplify.Web.Multipart/) |
+| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v0.2-blue.png)](https://www.nuget.org/packages/Simplify.Web.Multipart/) |
 | :------ | :------: |
 | **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.Multipart.png)](http://nugetstatus.com/packages/Simplify.Web.Multipart) |
 
