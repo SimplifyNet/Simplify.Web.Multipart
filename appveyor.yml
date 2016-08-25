@@ -1,0 +1,20 @@
+version: '{build}'
+
+branches:
+  only:
+  - develop
+  - master
+
+skip_tags: true
+clone_depth: 1
+
+configuration: Release
+platform: Any CPU
+
+before_build:
+- cmd: '".nuget/NuGet.exe" restore Simplify.Web.Multipart.sln'
+
+build:
+  publish_nuget: true
+  parallel: true
+  verbosity: minimal

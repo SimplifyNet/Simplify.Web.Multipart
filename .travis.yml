@@ -1,0 +1,13 @@
+branches:
+ only:
+  - develop
+  - master
+
+git:
+ depth: 1
+
+language: csharp
+solution: Simplify.Web.Multipart.sln
+
+script:
+ - xbuild /p:Platform="Any CPU" /p:Configuration=Release Simplify.Web.Multipart.sln /tv:12.0
