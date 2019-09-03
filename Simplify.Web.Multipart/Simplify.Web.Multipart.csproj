@@ -1,25 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net462</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
 		<Description>Simplify.Web multipart form model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>0.3</Version>
+		<Version>1.0</Version>
 		<PackageProjectUrl>https://github.com/i4004/Simplify.Web.Multipart</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/i4004/Simplify.Web/master/Images/Icon.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/i4004/Simplify.Web.Multipart</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web multipart</PackageTags>
 		<PackageReleaseNotes>
-			* Upgrade to Simplify.Web 2.0
-			* .NET 4.5.2 version upgrade to .NET 4.6.2
+			* Upgrade to Simplify.Web 2.2
+			* .NET Standard 2.0 support
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Multipart.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="2.0.0" />
+		<PackageReference Include="Simplify.Web" Version="2.2.0" />
 		<PackageReference Include="HttpMultipartParser" Version="2.2.4" />
 	</ItemGroup>
 </Project>
