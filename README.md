@@ -6,8 +6,7 @@
 
 | Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.0-blue.png)](https://www.nuget.org/packages/Simplify.Web.Multipart/) |
 | :------ | :------: |
-| **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.Multipart.png)](http://nugetstatus.com/packages/Simplify.Web.Multipart) |
-| **Target Frameworks** | 4.6.2 |
+| **Target Framework** | Standard 2.0 |
 
 ## Build status
 
