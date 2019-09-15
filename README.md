@@ -1,6 +1,6 @@
 # Simplify.Web.Multipart
 
-`Simplify.Web.Multipart` is a package which provides multipart form view model and model binder for [Simplify.Web](https://github.com/i4004/Simplify.Web)  web-framework.
+`Simplify.Web.Multipart` is a package which provides multipart form view model and model binder for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web)  web-framework.
 
 ## Package status
 
