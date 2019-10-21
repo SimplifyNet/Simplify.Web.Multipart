@@ -11,7 +11,7 @@
 
 ## Quick start
 
-## Registering binder
+### Registering binder
 
 ```csharp
 public void Configuration(IApplicationBuilder app)
@@ -30,7 +30,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-## Getting files from client
+### Getting files from client
 
 Multipart files will be deserialized to the controller model on first model access
 
