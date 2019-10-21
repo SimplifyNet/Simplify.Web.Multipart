@@ -17,22 +17,23 @@ namespace Simplify.Web.Multipart.Model.Binding
 		/// <param name="args">The <see cref="ModelBinderEventArgs{T}" /> instance containing the event data.</param>
 		public void Bind<T>(ModelBinderEventArgs<T> args)
 		{
-			if (args.Context.Request.ContentType.Contains("multipart/form-data"))
-			{
-				var multipartModelType = typeof(MultipartViewModel);
-				if (typeof(T) != multipartModelType)
-					throw new ModelBindingException("For HTTP multipart form data model type should be: " + multipartModelType.Name);
+			if (!args.Context.Request.ContentType.Contains("multipart/form-data"))
+				return;
 
-				var parser = new MultipartFormDataParser(args.Context.Request.Body);
-				var obj = Activator.CreateInstance<T>();
+			var multipartModelType = typeof(MultipartViewModel);
 
-				var model = (MultipartViewModel)(object)obj;
+			if (typeof(T) != multipartModelType)
+				throw new ModelBindingException("For HTTP multipart form data model type should be: " + multipartModelType.Name);
 
-				model.Files = parser.Files;
-				model.Parameters = parser.Parameters;
+			var parser = new MultipartFormDataParser(args.Context.Request.Body);
+			var obj = Activator.CreateInstance<T>();
 
-				args.SetModel(obj);
-			}
+			var model = (MultipartViewModel)(object)obj;
+
+			model.Files = parser.Files;
+			model.Parameters = parser.Parameters;
+
+			args.SetModel(obj);
 		}
 	}
 }

@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<LangVersion>8.0</LangVersion>
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
 		<Description>Simplify.Web multipart form model binder</Description>
@@ -12,8 +13,10 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web multipart</PackageTags>
 		<PackageReleaseNotes>
+			New
+			* `IDIRegistrator` `HttpMultipartFormModelBinder` registration extension method (#3)
 			Updates
-			* Upgrade to Simplify.Web 3
+			* Upgrade to Simplify.Web 3 (PR #2)
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Multipart.xml</DocumentationFile>
