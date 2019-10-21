@@ -19,7 +19,7 @@
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Multipart.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="2.3.0" />
+		<PackageReference Include="Simplify.Web" Version="3.0.0" />
 		<PackageReference Include="HttpMultipartParser" Version="2.2.4" />
 	</ItemGroup>
 </Project>
