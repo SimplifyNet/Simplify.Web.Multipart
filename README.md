@@ -9,23 +9,28 @@
 
 `Simplify.Web.Multipart` is a package which provides multipart form view model and model binder for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework.
 
-## Examples
+## Quick start
 
-## Getting files from client
-
-### Registering binder
+## Registering binder
 
 ```csharp
-public void Configuration(IAppBuilder app)
+public void Configuration(IApplicationBuilder app)
 {
     ...
     HttpModelHandler.RegisterModelBinder<HttpMultipartFormModelBinder>();
     ...
     app.UseSimplifyWeb();
 }
+
+public void ConfigureServices(IServiceCollection services)
+{
+	...
+	DIContainer.Current.RegisterHttpMultipartFormModelBinder();
+	...
+}
 ```
 
-### Accessing model
+## Getting files from client
 
 Multipart files will be deserialized to the controller model on first model access
 
