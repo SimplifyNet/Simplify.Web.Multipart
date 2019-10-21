@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using HttpMultipartParser;
 
-namespace Simplify.Web.Multipart.ModelBinding
+namespace Simplify.Web.Multipart.Model
 {
 	/// <summary>
 	/// HTTP multipart form data model

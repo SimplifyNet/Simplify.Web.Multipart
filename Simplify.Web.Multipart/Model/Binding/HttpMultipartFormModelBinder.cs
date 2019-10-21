@@ -1,8 +1,8 @@
 ﻿using System;
 using HttpMultipartParser;
-using Simplify.Web.ModelBinding;
+using Simplify.Web.Model.Binding;
 
-namespace Simplify.Web.Multipart.ModelBinding.Binders
+namespace Simplify.Web.Multipart.Model.Binding
 {
 	/// <summary>
 	/// Provides form multipart data to object binding

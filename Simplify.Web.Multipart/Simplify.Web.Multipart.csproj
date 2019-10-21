@@ -5,7 +5,7 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web multipart form model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.0.1</Version>
+		<Version>1.1</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Multipart</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Multipart</RepositoryUrl>
@@ -13,13 +13,13 @@
 		<PackageTags>Simplify.Web multipart</PackageTags>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to Simplify.Web 2.3
+			* Upgrade to Simplify.Web 3
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Multipart.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="2.3.0" />
+		<PackageReference Include="Simplify.Web" Version="3.0.0" />
 		<PackageReference Include="HttpMultipartParser" Version="2.2.4" />
 	</ItemGroup>
 </Project>
