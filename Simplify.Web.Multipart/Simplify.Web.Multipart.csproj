@@ -6,23 +6,22 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web multipart form model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.1</Version>
+		<Version>1.2</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Multipart</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Multipart</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web multipart</PackageTags>
 		<PackageReleaseNotes>
-			New
-			* `IDIRegistrator` `HttpMultipartFormModelBinder` registration extension method (#3)
 			Updates
-			* Upgrade to Simplify.Web 3 (PR #2)
+			* Upgrade to Simplify.Web 4 (#5)
+			* Upgrade to HttpMultipartParser 3.1 (PR #7)
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Multipart.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="3.0.0" />
-		<PackageReference Include="HttpMultipartParser" Version="2.2.4" />
+		<PackageReference Include="Simplify.Web" Version="4.0.0" />
+		<PackageReference Include="HttpMultipartParser" Version="3.1.0" />
 	</ItemGroup>
 </Project>

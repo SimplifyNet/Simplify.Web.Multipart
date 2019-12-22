@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using HttpMultipartParser;
 using Simplify.Web.Model.Binding;
 
@@ -15,7 +16,7 @@ namespace Simplify.Web.Multipart.Model.Binding
 		/// </summary>
 		/// <typeparam name="T">Model type</typeparam>
 		/// <param name="args">The <see cref="ModelBinderEventArgs{T}" /> instance containing the event data.</param>
-		public void Bind<T>(ModelBinderEventArgs<T> args)
+		public async Task BindAsync<T>(ModelBinderEventArgs<T> args)
 		{
 			if (!args.Context.Request.ContentType.Contains("multipart/form-data"))
 				return;
@@ -25,7 +26,7 @@ namespace Simplify.Web.Multipart.Model.Binding
 			if (typeof(T) != multipartModelType)
 				throw new ModelBindingException("For HTTP multipart form data model type should be: " + multipartModelType.Name);
 
-			var parser = new MultipartFormDataParser(args.Context.Request.Body);
+			var parser = await MultipartFormDataParser.ParseAsync(args.Context.Request.Body);
 			var obj = Activator.CreateInstance<T>();
 
 			var model = (MultipartViewModel)(object)obj;
