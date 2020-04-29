@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simplify.Web.Multipart", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServer", "TestServer\TestServer.csproj", "{4EF29FB7-2D85-4473-840B-02515F5E7CE9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestClient", "TestClient\TestClient.csproj", "{BDC0BD04-F8FD-49C1-8D07-9325D79F5CAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4EF29FB7-2D85-4473-840B-02515F5E7CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EF29FB7-2D85-4473-840B-02515F5E7CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EF29FB7-2D85-4473-840B-02515F5E7CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC0BD04-F8FD-49C1-8D07-9325D79F5CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC0BD04-F8FD-49C1-8D07-9325D79F5CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC0BD04-F8FD-49C1-8D07-9325D79F5CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC0BD04-F8FD-49C1-8D07-9325D79F5CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
