@@ -9,9 +9,10 @@ configuration: Release
 platform: Any CPU
 
 before_build:
-  - nuget restore
+  - nuget restore src/Simplify.Web.Multipart.sln
 
 build:
+  project: src/Simplify.Web.Multipart.sln
   publish_nuget: true
   parallel: true
   verbosity: minimal
