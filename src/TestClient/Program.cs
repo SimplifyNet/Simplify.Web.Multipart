@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Text;
 using RestSharp;
-using Simplify.Extensions;
 
 namespace TestClient
 {
@@ -13,7 +13,7 @@ namespace TestClient
 			var request = new RestRequest("api/v1/testIn", Method.POST)
 			{
 				AlwaysMultipartFormData = true,
-				Files = { FileParameter.Create("test file", "Hello world!!!".ToBytesArray(), "MyFile.txt") }
+				Files = { FileParameter.Create("test file", Encoding.UTF8.GetBytes("Hello World!!!"), "MyFile.txt", "text/plain") }
 			};
 
 			var result = client.Execute(request);

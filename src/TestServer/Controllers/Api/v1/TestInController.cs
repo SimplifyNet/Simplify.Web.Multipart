@@ -18,13 +18,13 @@ namespace TestServer.Controllers.Api.v1
 			using var stream = new StreamReader(file.Data);
 			var fileData = await stream.ReadToEndAsync();
 
-			Trace.WriteLine($"Files count: {Model.Files}");
-			Trace.WriteLine($"File name: {file.FileName}");
-			Trace.WriteLine($"File content: {fileData}");
+			Trace.WriteLine($"Files count: '{Model.Files}'");
+			Trace.WriteLine($"File name: '{file.FileName}'");
+			Trace.WriteLine($"File content: '{fileData}'");
 
 			// Assert
 
-			if (file.FileName != "test file")
+			if (file.Name != "test file")
 				throw new InvalidDataException($"Wrong name, actual: '{file.Name}'");
 
 			if (file.FileName != "MyFile.txt")
