@@ -24,7 +24,7 @@
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Multipart.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.1.1" />
+		<PackageReference Include="Simplify.Web" Version="4.1.2" />
 		<PackageReference Include="HttpMultipartParser" Version="4.3.1" />
 	</ItemGroup>
 </Project>
