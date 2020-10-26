@@ -15,7 +15,7 @@
 		<PackageReleaseNotes>
 			Updates
 			* Upgrade to Simplify.Web 4.2.* (floating version set)
-			* Upgrade to HttpMultipartParser 4.3
+			* Upgrade to HttpMultipartParser 4.3.* (floating version set)
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
