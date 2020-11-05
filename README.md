@@ -34,8 +34,6 @@ public void ConfigureServices(IServiceCollection services)
 
 ### Getting files from client
 
-Multipart files will be deserialized to the controller model on first model access
-
 #### Asynchronous
 
 ```csharp
@@ -51,6 +49,8 @@ public class MyController : ControllerAsync<MultipartViewModel>
 ```
 
 #### Synchronous
+
+Multipart files will be deserialized to the controller model on first model access
 
 ```csharp
 public class MyController : Controller<MultipartViewModel>
