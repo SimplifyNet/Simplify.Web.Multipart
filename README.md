@@ -39,7 +39,7 @@ public void ConfigureServices(IServiceCollection services)
 ```csharp
 public class MyController : ControllerAsync<MultipartViewModel>
 {
-    public override Task<ControllerResponse> Invoke()
+    public override async Task<ControllerResponse> Invoke()
     {
         await ReadModelAsync();
 
