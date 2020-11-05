@@ -9,7 +9,7 @@
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=SimplifyNet/Simplify.Web.Multipart)](https://dependabot.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
-`Simplify.Web.Multipart` is a package which provides multipart form view model and model binder for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework.
+[Simplify.Web.Multipart](https://www.nuget.org/packages/Simplify.Web.Multipart/) is a package which provides multipart form view model and model binder for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework.
 
 ## Quick start
 
