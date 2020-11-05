@@ -36,6 +36,22 @@ public void ConfigureServices(IServiceCollection services)
 
 Multipart files will be deserialized to the controller model on first model access
 
+#### Asynchronous
+
+```csharp
+public class MyController : ControllerAsync<MultipartViewModel>
+{
+    public override Task<ControllerResponse> Invoke()
+    {
+        await ReadModelAsync();
+
+        Model.Files
+    }
+}
+```
+
+#### Synchronous
+
 ```csharp
 public class MyController : Controller<MultipartViewModel>
 {
