@@ -14,7 +14,7 @@ namespace Simplify.Web.Multipart.Model
 		/// <value>
 		/// The files.
 		/// </value>
-		public List<FilePart> Files { get; set; }
+		public IReadOnlyList<FilePart> Files { get; set; }
 
 		/// <summary>
 		/// HTTP multipart form data parameters
@@ -22,6 +22,6 @@ namespace Simplify.Web.Multipart.Model
 		/// <value>
 		/// The parameters.
 		/// </value>
-		public List<ParameterPart> Parameters { get; set; }
+		public IReadOnlyList<ParameterPart> Parameters { get; set; }
 	}
 }
