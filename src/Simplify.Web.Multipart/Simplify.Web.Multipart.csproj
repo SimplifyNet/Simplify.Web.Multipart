@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0</TargetFrameworks>
-		<LangVersion>8.0</LangVersion>
+		<LangVersion>9.0</LangVersion>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.Multipart.xml</DocumentationFile>
 
-		<Version>1.4</Version>
+		<Version>1.4.1</Version>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to HttpMultipartParser 5.0.* (PR#25)
+			* Upgrade to Simplify.Web 4.2.3
 		</PackageReleaseNotes>
 
 		<Authors>Alexander Krylkov</Authors>

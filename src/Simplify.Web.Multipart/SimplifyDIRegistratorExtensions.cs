@@ -12,11 +12,7 @@ namespace Simplify.Web.Multipart
 		/// Registers Simplify.Web.Json JsonModelBinder.
 		/// </summary>
 		/// <param name="registrator">The registrator.</param>
-		public static IDIRegistrator RegisterHttpMultipartFormModelBinder(this IDIRegistrator registrator)
-		{
+		public static IDIRegistrator RegisterHttpMultipartFormModelBinder(this IDIRegistrator registrator) =>
 			registrator.Register<HttpMultipartFormModelBinder>(LifetimeType.Singleton);
-
-			return registrator;
-		}
 	}
 }
