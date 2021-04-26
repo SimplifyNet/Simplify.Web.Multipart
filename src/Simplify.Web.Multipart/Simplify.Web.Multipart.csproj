@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
 		<LangVersion>9.0</LangVersion>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -8,11 +8,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-		<Version>1.4.1</Version>
-		<PackageReleaseNotes>
-			Updates
-			* Upgrade to Simplify.Web 4.2.3
-		</PackageReleaseNotes>
+		<Version>1.4.2</Version>
 
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
@@ -23,6 +19,8 @@
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Multipart</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web multipart</PackageTags>
+
+		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Multipart/tree/master/src/Simplify.Web.Multipart/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Simplify.Web" Version="4.4.*" />
@@ -30,5 +28,6 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
+		<None Include="CHANGELOG.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
