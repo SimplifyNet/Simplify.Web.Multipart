@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+	{
+		"name": "TesterApp Launch",
+		"type": "coreclr",
+		"request": "launch",
+		"preLaunchTask": "Build",
+		"program": "${workspaceFolder}/src/TestServer/bin/Debug/netcoreapp3.1/TestServer.dll",
+		"cwd": "${workspaceFolder}/src/TestServer/bin/Debug/netcoreapp3.1/",
+		"internalConsoleOptions": "openOnSessionStart",
+		"env":
+		{
+			"ASPNETCORE_ENVIRONMENT": "Development"
+		}
+	}]
+}
