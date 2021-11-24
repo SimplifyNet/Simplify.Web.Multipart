@@ -6,8 +6,8 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/TestServer/bin/Debug/netcoreapp3.1/TestServer.dll",
-		"cwd": "${workspaceFolder}/src/TestServer/bin/Debug/netcoreapp3.1/",
+		"program": "${workspaceFolder}/src/TestServer/bin/Debug/net6.0/TestServer.dll",
+		"cwd": "${workspaceFolder}/src/TestServer/bin/Debug/net6.0/",
 		"internalConsoleOptions": "openOnSessionStart",
 		"env":
 		{
