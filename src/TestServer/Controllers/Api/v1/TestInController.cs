@@ -25,13 +25,13 @@ namespace TestServer.Controllers.Api.v1
 			// Assert
 
 			if (file.Name != "test file")
-				throw new InvalidDataException($"Wrong name, actual: '{file.Name}'");
+				return Content($"Wrong name, actual: '{file.Name}'", 500);
 
 			if (file.FileName != "MyFile.txt")
-				throw new InvalidDataException($"Wrong file name, actual: '{file.FileName}'");
+				return Content($"Wrong file name, actual: '{file.FileName}'", 500);
 
 			if (fileData != "Hello World!!!")
-				throw new InvalidDataException($"Wrong file data, actual: '{fileData}'");
+				return Content($"Wrong file data, actual: '{fileData}'", 500);
 
 			return NoContent();
 		}
