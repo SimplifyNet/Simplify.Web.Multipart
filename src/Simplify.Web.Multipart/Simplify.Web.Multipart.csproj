@@ -24,7 +24,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Simplify.Web" Version="4.5.*" />
-		<PackageReference Include="HttpMultipartParser" Version="5.0.1" />
+		<PackageReference Include="HttpMultipartParser" Version="5.1.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
