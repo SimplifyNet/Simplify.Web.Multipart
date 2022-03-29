@@ -18,7 +18,7 @@ namespace TestServer.Controllers.Api.v1
 			using var stream = new StreamReader(file.Data);
 			var fileData = await stream.ReadToEndAsync();
 
-			Trace.WriteLine($"Files count: '{Model.Files}'");
+			Trace.WriteLine($"Files count: '{Model.Files.Count}'");
 			Trace.WriteLine($"File name: '{file.FileName}'");
 			Trace.WriteLine($"File content: '{fileData}'");
 
