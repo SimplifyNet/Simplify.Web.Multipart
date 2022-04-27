@@ -2,8 +2,7 @@
 
 [![Nuget Version](https://img.shields.io/nuget/v/Simplify.Web.Multipart)](https://www.nuget.org/packages/Simplify.Web.Multipart/)
 [![Nuget Download](https://img.shields.io/nuget/dt/Simplify.Web.Multipart)](https://www.nuget.org/packages/Simplify.Web.Multipart/)
-[![AppVeyor branch](https://img.shields.io/appveyor/ci/i4004/simplify-web-multipart/master)](https://ci.appveyor.com/project/i4004/simplify-web-multipart)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Multipart)](https://libraries.io/nuget/Simplify.Web.Multipart)
+[![Build Package](https://github.com/SimplifyNet/Simplify.Web.Multipart/actions/workflows/build.yml/badge.svg)](https://github.com/SimplifyNet/Simplify.Web.Multipart/actions/workflows/build.yml)[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Multipart)](https://libraries.io/nuget/Simplify.Web.Multipart)
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SimplifyNet/Simplify.Web.Multipart)](https://www.codefactor.io/repository/github/simplifynet/simplify.web.Multipart)
 ![Platform](https://img.shields.io/badge/platform-.NET%205.0%20%7C%20.NET%20Standard%202.0-lightgrey)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
