@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.5] - 2022-05-18
+
+### Added
+
+- Explicit .NET 6 targeting
+
+### Dependencies
+
+- Simplify.Web bump to 4.6 (PR#36)
+
 ## [1.4.4] - 2022-03-13
 
 ### Dependencies

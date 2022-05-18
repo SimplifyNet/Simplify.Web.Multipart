@@ -7,22 +7,21 @@ using Simplify.Web.Model;
 using Simplify.Web.Multipart.Model.Binding;
 using TestServer.Setup;
 
-namespace TestServer
+namespace TestServer;
+
+public class Startup
 {
-	public class Startup
+	public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 	{
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-		{
-			IocRegistrations.Register();
+		IocRegistrations.Register();
 
-			if (env.IsDevelopment())
-				app.UseDeveloperExceptionPage();
+		if (env.IsDevelopment())
+			app.UseDeveloperExceptionPage();
 
-			HttpModelHandler.RegisterModelBinder<HttpMultipartFormModelBinder>();
+		HttpModelHandler.RegisterModelBinder<HttpMultipartFormModelBinder>();
 
-			app.UseSimplifyWeb();
+		app.UseSimplifyWeb();
 
-			DIContainer.Current.Verify();
-		}
+		DIContainer.Current.Verify();
 	}
 }
