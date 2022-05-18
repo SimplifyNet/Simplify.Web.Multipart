@@ -23,7 +23,7 @@
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Multipart/tree/master/src/Simplify.Web.Multipart/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.5.0" />
+		<PackageReference Include="Simplify.Web" Version="4.6.0" />
 		<PackageReference Include="HttpMultipartParser" Version="5.1.0" />
 	</ItemGroup>
 	<ItemGroup>
