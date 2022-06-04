@@ -14,10 +14,12 @@
 		<Description>Simplify.Web multipart form model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Multipart</PackageProjectUrl>
-		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Multipart</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web multipart</PackageTags>
+
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Multipart/tree/master/src/Simplify.Web.Multipart/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
@@ -27,6 +29,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
+		<None Include="..\..\LICENSE.txt" Pack="true" PackagePath="\" />
 		<None Include="CHANGELOG.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
