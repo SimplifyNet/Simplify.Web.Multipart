@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.0] - 2022-06-04
+
+### Removed
+
+- .NET Standard 2.0 support
+
+### Added
+
+- Explicit .NET Standard 2.1, .NET Framework 4.8 targeting
+
+### Dependencies
+
+- HttpMultipartParser to 6.0.1 (PR#37)
+
 ## [1.4.5] - 2022-05-18
 
 ### Added
