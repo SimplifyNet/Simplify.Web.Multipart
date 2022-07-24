@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.0] - 2022-07-24
+
+### Dependencies
+
+- HttpMultipartParser to 7.0.0 (PR#39)
+
 ## [1.5.0] - 2022-06-04
 
 ### Removed
