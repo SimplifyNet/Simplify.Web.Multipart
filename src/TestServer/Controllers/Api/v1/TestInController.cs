@@ -19,8 +19,13 @@ public class TestInController : AsyncController<MultipartViewModel>
 		var fileData = await stream.ReadToEndAsync();
 
 		Trace.WriteLine($"Files count: '{Model.Files.Count}'");
+		Console.WriteLine($"Files count: '{Model.Files.Count}'");
+
 		Trace.WriteLine($"File name: '{file.FileName}'");
+		Console.WriteLine($"File name: '{file.FileName}'");
+
 		Trace.WriteLine($"File content: '{fileData}'");
+		Console.WriteLine($"File content: '{fileData}'");
 
 		// Assert
 
