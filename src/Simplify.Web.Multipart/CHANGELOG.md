@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.7.1] - 2023-02-11
+
+### Dependencies
+
+- HttpMultipartParser to 8.1.0 (PR#42)
+
+### Removed
+
+- Explicit .NET 5 support
+
 ## [1.7.0] - 2023-01-10
 
 ### Dependencies
