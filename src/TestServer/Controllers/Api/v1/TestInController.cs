@@ -10,9 +10,9 @@ using Simplify.Web.Multipart.Model;
 namespace TestServer.Controllers.Api.v1;
 
 [Post("/api/v1/testIn")]
-public class TestInController : AsyncController<MultipartViewModel>
+public class TestInController : Controller2<MultipartViewModel>
 {
-	public override async Task<ControllerResponse> Invoke()
+	public async Task<ControllerResponse> Invoke()
 	{
 		var file = Model.Files.FirstOrDefault() ?? throw new ArgumentException("No files in model");
 		using var stream = new StreamReader(file.Data);

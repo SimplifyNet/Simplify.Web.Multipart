@@ -1,13 +1,20 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Builder;
+using Simplify.DI;
+using Simplify.Web;
+using Simplify.Web.Model;
+using Simplify.Web.Multipart.Model.Binding;
+using TestServer.Setup;
 
-namespace TestServer;
+DIContainer.Current
+	.RegisterAll()
+	.Verify();
 
-public class Program
-{
-	public static void Main(string[] args) => CreateWebHostBuilder(args).Build().Run();
+HttpModelHandler.RegisterModelBinder<HttpMultipartFormModelBinder>();
 
-	public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-		WebHost.CreateDefaultBuilder(args)
-		.UseStartup<Startup>();
-}
+var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
+
+app.UseSimplifyWeb();
+
+await app.RunAsync();
