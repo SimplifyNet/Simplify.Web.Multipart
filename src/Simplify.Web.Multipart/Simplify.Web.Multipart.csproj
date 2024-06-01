@@ -7,7 +7,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-		<Version>1.7.2</Version>
+		<Version>1.8-pre01</Version>
 
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
@@ -24,8 +24,8 @@
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Multipart/tree/master/src/Simplify.Web.Multipart/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.7.0" />
-		<PackageReference Include="HttpMultipartParser" Version="8.3.0" />
+		<PackageReference Include="Simplify.Web" Version="5.0-pre01" />
+		<PackageReference Include="HttpMultipartParser" Version="8.4.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />

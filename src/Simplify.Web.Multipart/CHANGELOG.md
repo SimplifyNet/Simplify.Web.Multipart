@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.8.0] - Unreleased
+
+- Simplify.Web bump to 5.0
+- HttpMultipartParser to 8.4.0
+
 ## [1.7.2] - 2023-08-26
 
 ### Dependencies
