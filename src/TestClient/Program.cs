@@ -13,7 +13,7 @@ request.AddFile("test file", Encoding.UTF8.GetBytes("Hello World!!!"), "MyFile.t
 
 var result = client.ExecuteAsync(request).Result;
 
-if (result.IsSuccessful != true)
+if (!result.IsSuccessful)
 	throw new InvalidOperationException("Error sending file: " + result.Content);
 
 Console.WriteLine("HTTP status: " + result.StatusCode);

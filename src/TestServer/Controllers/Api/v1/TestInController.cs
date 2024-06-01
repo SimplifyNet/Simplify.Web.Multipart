@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using Simplify.Web;
 using Simplify.Web.Attributes;
@@ -14,17 +13,17 @@ public class TestInController : Controller2<MultipartViewModel>
 {
 	public async Task<ControllerResponse> Invoke()
 	{
-		var file = Model.Files.FirstOrDefault() ?? throw new ArgumentException("No files in model");
+		var file = Model.Files[0] ?? throw new ArgumentException("No files in model");
 		using var stream = new StreamReader(file.Data);
 		var fileData = await stream.ReadToEndAsync();
 
-		Trace.WriteLine($"Files count: '{Model.Files.Count}'");
+		Trace.TraceInformation($"Files count: '{Model.Files.Count}'");
 		Console.WriteLine($"Files count: '{Model.Files.Count}'");
 
-		Trace.WriteLine($"File name: '{file.FileName}'");
+		Trace.TraceInformation($"File name: '{file.FileName}'");
 		Console.WriteLine($"File name: '{file.FileName}'");
 
-		Trace.WriteLine($"File content: '{fileData}'");
+		Trace.TraceInformation($"File content: '{fileData}'");
 		Console.WriteLine($"File content: '{fileData}'");
 
 		// Assert
