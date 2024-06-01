@@ -1,26 +1,26 @@
 {
 	"version": "0.2.0",
 	"configurations": [
-	{
-		"name": "TestServer Launch",
-		"type": "coreclr",
-		"request": "launch",
-		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/TestServer/bin/Debug/net6.0/TestServer.dll",
-		"cwd": "${workspaceFolder}/src/TestServer/bin/Debug/net6.0/",
-		"internalConsoleOptions": "openOnSessionStart",
-		"env":
 		{
-			"ASPNETCORE_ENVIRONMENT": "Development"
+			"name": "TestServer Launch",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "Build",
+			"program": "${workspaceFolder}/src/TestServer/bin/Debug/net8.0/TestServer.dll",
+			"cwd": "${workspaceFolder}/src/TestServer/bin/Debug/net8.0/",
+			"internalConsoleOptions": "openOnSessionStart",
+			"env": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		},
+		{
+			"name": "TestClient Launch",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "Build",
+			"program": "${workspaceFolder}/src/TestClient/bin/Debug/net8.0/TestClient.dll",
+			"cwd": "${workspaceFolder}/src/TestClient/bin/Debug/net8.0/",
+			"internalConsoleOptions": "openOnSessionStart"
 		}
-	},
-	{
-		"name": "TestClient Launch",
-		"type": "coreclr",
-		"request": "launch",
-		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/TestClient/bin/Debug/net6.0/TestClient.dll",
-		"cwd": "${workspaceFolder}/src/TestClient/bin/Debug/net6.0/",
-		"internalConsoleOptions": "openOnSessionStart"
-	}]
+	]
 }
