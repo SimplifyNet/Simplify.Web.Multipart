@@ -7,9 +7,9 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-		<Version>1.8-pre01</Version>
+		<Version>1.8</Version>
 
-		<Authors>Alexander Krylkov</Authors>
+		<Authors>Simplify community</Authors>
 		<Product>Simplify</Product>
 		<Description>Simplify.Web multipart form model binder</Description>
 		<Copyright>Licensed under LGPL</Copyright>
@@ -24,7 +24,7 @@
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Multipart/tree/master/src/Simplify.Web.Multipart/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="5.0-pre01" />
+		<PackageReference Include="Simplify.Web" Version="5.0" />
 		<PackageReference Include="HttpMultipartParser" Version="8.4.0" />
 	</ItemGroup>
 	<ItemGroup>
