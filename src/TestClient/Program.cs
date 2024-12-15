@@ -1,20 +1,10 @@
 ﻿using System;
-using System.Text;
-using RestSharp;
+using System.IO;
+using Flurl.Http;
 
-var client = new RestClient("http://localhost:5000/");
-
-var request = new RestRequest("api/v1/testIn", Method.Post)
-{
-	AlwaysMultipartFormData = true
-};
-
-request.AddFile("test file", Encoding.UTF8.GetBytes("Hello World!!!"), "MyFile.txt", "text/plain");
-
-var result = client.ExecuteAsync(request).Result;
-
-if (!result.IsSuccessful)
-	throw new InvalidOperationException("Error sending file: " + result.Content);
+var result = await "http://localhost:5000/api/v1/testIn"
+	.PostMultipartAsync(mp =>
+		mp.AddFile("test file", new MemoryStream("Hello World!!!"u8.ToArray()), "MyFile.txt", "text/plain"));
 
 Console.WriteLine("HTTP status: " + result.StatusCode);
 Console.ReadLine();
