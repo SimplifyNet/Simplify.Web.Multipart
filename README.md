@@ -59,3 +59,32 @@ public class MyController : Controller<MultipartViewModel>
     }
 }
 ```
+
+### Binding parameters to a strongly typed model
+
+Instead of searching through the `Parameters` list manually, you can bind the multipart form parameters to a strongly typed model the same way as for a regular query/form/JSON request. Inherit your model from `MultipartModel` (which exposes `Files`) and add your own properties:
+
+```csharp
+public class UploadModel : MultipartModel
+{
+    public string Title { get; set; }
+
+    public int Count { get; set; }
+}
+```
+
+The parameters are parsed into the model properties automatically (the same parser as `Simplify.Web` query/form binding is reused, so `[BindProperty]`, `[Exclude]`, `[Format]`, `IList<T>` properties and validation attributes are all supported), while the uploaded files remain accessible via `Model.Files`:
+
+```csharp
+public class MyController : Controller2<UploadModel>
+{
+    public async Task<ControllerResponse> Invoke()
+    {
+        Model.Title; // bound from the "Title" multipart parameter
+        Model.Count; // bound from the "Count" multipart parameter
+        Model.Files; // uploaded files
+    }
+}
+```
+
+The legacy `MultipartViewModel` (which exposes the raw `Parameters` list) still works as before and now also inherits from `MultipartModel`.

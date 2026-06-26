@@ -4,12 +4,17 @@
 
 ### Added
 
+- `MultipartModel` base class which exposes the uploaded `Files` and allows binding the multipart form parameters to a strongly typed model (reusing the `Simplify.Web` model parser, so `[BindProperty]`, `[Exclude]`, `[Format]`, `IList<T>` properties and validation attributes are supported)
 - .NET 10.0 explicit support
 
 ### Removed
 
 - .NET 6.0 explicit support
 - .NET 4.8 explicit support
+
+### Changed
+
+- `MultipartViewModel` now inherits from `MultipartModel` (fully backward compatible, still exposes the raw `Parameters` list)
 
 ### Dependencies
 
