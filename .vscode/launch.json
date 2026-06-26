@@ -6,8 +6,8 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build",
-			"program": "${workspaceFolder}/src/TestServer/bin/Debug/net8.0/TestServer.dll",
-			"cwd": "${workspaceFolder}/src/TestServer/bin/Debug/net8.0/",
+			"program": "${workspaceFolder}/src/TestServer/bin/Debug/net10.0/TestServer.dll",
+			"cwd": "${workspaceFolder}/src/TestServer/bin/Debug/net10.0/",
 			"internalConsoleOptions": "openOnSessionStart",
 			"env": {
 				"ASPNETCORE_ENVIRONMENT": "Development"
@@ -18,8 +18,8 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build",
-			"program": "${workspaceFolder}/src/TestClient/bin/Debug/net8.0/TestClient.dll",
-			"cwd": "${workspaceFolder}/src/TestClient/bin/Debug/net8.0/",
+			"program": "${workspaceFolder}/src/TestClient/bin/Debug/net10.0/TestClient.dll",
+			"cwd": "${workspaceFolder}/src/TestClient/bin/Debug/net10.0/",
 			"internalConsoleOptions": "openOnSessionStart"
 		}
 	]

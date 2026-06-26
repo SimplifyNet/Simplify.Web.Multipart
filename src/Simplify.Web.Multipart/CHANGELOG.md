@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.9.0] - 2026-06-26
+
+### Added
+
+- .NET 10.0 explicit support
+
+### Removed
+
+- .NET 6.0 explicit support
+- .NET 4.8 explicit support
+
+### Dependencies
+
+- Simplify.Web bump to 5.3
+- HttpMultipartParser bump to 10.0.0
+
 ## [1.8.0] - 2024-06-05
 
 ### Dependencies

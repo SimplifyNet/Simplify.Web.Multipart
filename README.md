@@ -5,7 +5,7 @@
 [![Build Package](https://github.com/SimplifyNet/Simplify.Web.Multipart/actions/workflows/build.yml/badge.svg)](https://github.com/SimplifyNet/Simplify.Web.Multipart/actions/workflows/build.yml)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Multipart)](https://libraries.io/nuget/Simplify.Web.Multipart)
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SimplifyNet/Simplify.Web.Multipart)](https://www.codefactor.io/repository/github/simplifynet/simplify.web.Multipart)
-![Platform](https://img.shields.io/badge/platform-.NET%206.0%20%7C%20.NET%20Standard%202.1%20%7C%20.NET%204.8-lightgrey)
+![Platform](https://img.shields.io/badge/platform-.NET%2010.0%20%7C%20.NET%20Standard%202.1-lightgrey)
 
 [Simplify.Web.Multipart](https://www.nuget.org/packages/Simplify.Web.Multipart/) is a package which provides multipart form view model and model binder for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework.
 
