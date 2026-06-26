@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using Simplify.Web;
@@ -18,6 +19,21 @@ public class TestInTypedController : Controller2<UploadModel>
 		using var stream = new StreamReader(file.Data);
 
 		var fileData = await stream.ReadToEndAsync();
+
+		Trace.TraceInformation($"Files count: '{Model.Files.Count}'");
+		Console.WriteLine($"Files count: '{Model.Files.Count}'");
+
+		Trace.TraceInformation($"File name: '{file.FileName}'");
+		Console.WriteLine($"File name: '{file.FileName}'");
+
+		Trace.TraceInformation($"File content: '{fileData}'");
+		Console.WriteLine($"File content: '{fileData}'");
+
+		Trace.TraceInformation($"Title: '{Model.Title}'");
+		Console.WriteLine($"Title: '{Model.Title}'");
+
+		Trace.TraceInformation($"Count: '{Model.Count}'");
+		Console.WriteLine($"Count: '{Model.Count}'");
 
 		// Assert parameters were bound to the typed model
 
